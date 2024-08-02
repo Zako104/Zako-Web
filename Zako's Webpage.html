@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zako's Personal Webpage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(to right, #004d40, #00796b); /* Peacock Blue Gradient */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .section {
+            margin: 2rem 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+        .card-container .card {
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 270px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card-container .card:hover {
+            transform: scale(1.05);
+        }
+        .card-container .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-container .card-content {
+            padding: 1rem;
+        }
+        .singer-image {
+            display: flex;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+        .singer-image img {
+            border-radius: 10px;
+            width: 250px;
+            height: auto;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+        .singer-image img:hover {
+            transform: scale(1.05);
+        }
+        .contact-info {
+            text-align: center;
+            margin: 1rem 0;
+        }
+        .contact-info a {
+            display: inline-flex;
+            align-items: center;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        .contact-info img {
+            width: 30px;
+            height: auto;
+            margin-right: 0.5rem;
+        }
+        .contact-info span {
+            vertical-align: middle;
+            font-size: 1.1rem;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .email {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00796b;
+            text-decoration: none;
+        }
+        .email:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zako's Personal Webpage</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#music">Music</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="about" class="section">
+            <h2>About Me</h2>
+            <p>Welcome to my personal webpage! I am passionate about swimming and football. I also love music and aim to make a meaningful impact in my life.</p>
+            <p>Here are a few things I enjoy:</p>
+        </div>
+
+        <div id="hobbies" class="section">
+            <h2>Hobbies</h2>
+            <div class="card-container">
+                <a href="https://en.wikipedia.org/wiki/Swimming" target="_blank" class="card">
+                    <img src="https://polkerrisbeach.com/wp-content/uploads/2022/10/popularity-of-sea-swimming-polkerris-beach-blog.jpg" alt="Swimming" title="Swimming">
+                    <div class="card-content">
+                        <h3>Swimming</h3>
+                        <p>Enjoy swimming in the sea or pool, a great way to stay fit and relaxed.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Football" target="_blank" class="card">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/91bebdc1-300f-4902-921e-610668248a71/daqs3c7-924b85cd-8c7e-4264-8279-08ac291c5ff8.png/v1/fill/w_1600,h_1000,q_80,strp/cristiano_ronaldo_and_lionel_messi_wallpaper_by_chrisramos4gfx_daqs3c7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcLzkxYmViZGMxLTMwMGYtNDkwMi05MjFlLTYxMDY2ODI0OGE3MVwvZGFxczNjNy05MjRiODVjZC04YzdlLTQyNjQtODI3OS0wOGFjMjkxYzVmZjgucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.vEqvsNPPO2xArX0fNJ8f4ghWsUyy8rbLw4efzjOu0OY" alt="Football" title="Football">
+                    <div class="card-content">
+                        <h3>Football</h3>
+                        <p>Football is not just a sport but a passion for many. It's exciting and unites people worldwide.</p>
+                    </div>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Music" target="_blank" class="card">
+                    <img src="https://i.pinimg.com/originals/0f/ae/7f/0fae7f61be81619fd99a0abe04dc9f45.jpg" alt="Music" title="Music">
+                    <div class="card-content">
+                        <h3>Music</h3>
+                        <p>Music is a universal language that connects people through rhythm and melody. It's a source of joy and inspiration.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="music" class="section">
+            <h2>Top 4 Best Songs of Lana Del Rey</h2>
+            <div class="card-container">
+                <div class="left">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/cE6wxDqdOV0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLClGRjaX5OIWaOpsTuigAz_aEM9cg" alt="Video Games" title="Video Games">
+                        <div class="card-content">
+                            <p><a href="https://youtu.be/JRWox-i6aAk?si=WXwYPChRHszRD6Ha" target="_blank">Video Games</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/JRWox-i6aAk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCzuVVKX11PZOK94fPDmJkpDFXy9A" alt="Blue Jeans" title="Blue Jeans">
+                        <div class="card-content">
+                            <p><a href="https://youtu.be/JRWox-i6aAk?si=by9oqyWCw3IXvWnO" target="_blank">Blue Jeans</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="singer-image">
+                    <a href="https://en.wikipedia.org/wiki/Lana_Del_Rey" target="_blank">
+                        <img src="https://i.pinimg.com/736x/50/6c/5c/506c5c181620984cc281682fed190deb.jpg" alt="Lana Del Rey" title="Lana Del Rey">
+                    </a>
+                </div>
+                <div class="right">
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/E_jWcIDqXq0/hqdefault.jpg" alt="Born to Die" title="Born to Die">
+                        <div class="card-content">
+                            <p><a href="https://youtu.be/E_jWcIDqXq0?si=RPphW2grcTan1L04" target="_blank">Born to Die</a></p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://i.ytimg.com/vi/oKxuiw3iMBE/hq720.jpg" alt="West Coast" title="West Coast">
+                        <div class="card-content">
+                            <p><a href="https://youtu.be/oKxuiw3iMBE?si=K5E4GyPD7FDqHR3P" target="_blank">West Coast</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="section">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="https://instagram.com/zako_104" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    <span>@zako_104</span>
+                </a>
+                <p class="email">Gmail: zakokach7@gmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Zako. All rights reserved.</p>
+    </footer>
+</body>
+</html>
